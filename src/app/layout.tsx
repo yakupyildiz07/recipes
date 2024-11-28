@@ -1,7 +1,13 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import {Pacifico,Cinzel} from "next/font/google"
 import "./globals.css";
 
+const cinzel = Cinzel({
+  subsets: ['latin'],  
+  weight: ['400'], 
+  variable: '--font-cinzel' 
+})
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -26,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${cinzel.variable} antialiased font-cinzel`}
       >
         {children}
       </body>

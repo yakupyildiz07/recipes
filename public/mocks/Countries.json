@@ -1,0 +1,147 @@
+{
+  "countries": [
+    {
+      "strArea": "American",
+      "strCountryThumb": "https://www.themealdb.com/images/icons/flags/big/128/us.png",
+      "strUrl":"us"
+    },
+    {
+      "strArea": "British",
+      "strCountryThumb": "https://www.themealdb.com/images/icons/flags/big/128/gb.png",
+      "strUrl":"gb"
+    },
+    {
+      "strArea": "Canadian",
+      "strCountryThumb": "https://www.themealdb.com/images/icons/flags/big/128/ca.png",
+      "strUrl":"ca"
+    },
+    {
+      "strArea": "Chinese",
+      "strCountryThumb": "https://www.themealdb.com/images/icons/flags/big/128/cn.png",
+      "strUrl":"cn"
+    },
+
+    {
+      "strArea": "Croatian",
+      "strCountryThumb": "https://www.themealdb.com/images/icons/flags/big/128/hr.png",
+      "strUrl":"hr"
+    },
+
+    {
+      "strArea": "Dutch",
+      "strCountryThumb": "https://www.themealdb.com/images/icons/flags/big/128/nl.png",
+      "strUrl":"nl"
+    },
+    {
+      "strArea": "Egyptian",
+      "strCountryThumb": "https://www.themealdb.com/images/icons/flags/big/128/eg.png",
+      "strUrl":"eg"
+    },
+    {
+      "strArea": "Filipino",
+      "strCountryThumb": "https://www.themealdb.com/images/icons/flags/big/128/ph.png",
+      "strUrl":"ph"
+    },
+
+    {
+      "strArea": "French",
+      "strCountryThumb": "https://www.themealdb.com/images/icons/flags/big/128/fr.png",
+      "strUrl":"fr"
+    },
+    {
+      "strArea": "Greek",
+      "strCountryThumb": "https://www.themealdb.com/images/icons/flags/big/128/gr.png",
+      "strUrl":"gr"
+    },
+    {
+      "strArea": "Indian",
+      "strCountryThumb": "https://www.themealdb.com/images/icons/flags/big/128/in.png",
+      "strUrl":"in"
+    },
+    {
+      "strArea": "Irish",
+      "strCountryThumb": "https://www.themealdb.com/images/icons/flags/big/128/ie.png",
+      "strUrl":"ie"
+    },
+    {
+      "strArea": "Italian",
+      "strCountryThumb": "https://www.themealdb.com/images/icons/flags/big/128/it.png",
+      "strUrl":"it"
+    },
+    {
+      "strArea": "Jamaican",
+      "strCountryThumb": "https://www.themealdb.com/images/icons/flags/big/128/jm.png",
+      "strUrl":"jm"
+    },
+    {
+      "strArea": "Japanese",
+      "strCountryThumb": "https://www.themealdb.com/images/icons/flags/big/128/jp.png",
+      "strUrl":"jp"
+    },
+    {
+      "strArea": "Kenyan",
+      "strCountryThumb": "https://www.themealdb.com/images/icons/flags/big/128/kn.png",
+      "strUrl":"kn"
+    },
+    {
+      "strArea": "Malaysian",
+      "strCountryThumb": "https://www.themealdb.com/images/icons/flags/big/128/my.png",
+      "strUrl":"my"
+    },
+    {
+      "strArea": "Mexican",
+      "strCountryThumb": "https://www.themealdb.com/images/icons/flags/big/128/mx.png",
+      "strUrl":"mx"
+    },
+    {
+      "strArea": "Moroccan",
+      "strCountryThumb": "https://www.themealdb.com/images/icons/flags/big/128/ma.png",
+      "strUrl":"ma"
+    },
+    {
+      "strArea": "Polish",
+      "strCountryThumb": "https://www.themealdb.com/images/icons/flags/big/128/pl.png",
+      "strUrl":"pl"
+    },
+    {
+      "strArea": "Portuguese",
+      "strCountryThumb": "https://www.themealdb.com/images/icons/flags/big/128/pt.png",
+      "strUrl":"pt"
+    },
+    {
+      "strArea": "Russian",
+      "strCountryThumb": "https://www.themealdb.com/images/icons/flags/big/128/ru.png",
+      "strUrl":"ru"
+    },
+    {
+      "strArea": "Spanish",
+      "strCountryThumb": "https://www.themealdb.com/images/icons/flags/big/128/es.png",
+      "strUrl":"es"
+    },
+    {
+      "strArea": "Thai",
+      "strCountryThumb": "https://www.themealdb.com/images/icons/flags/big/128/th.png",
+      "strUrl":"th"
+    },
+    {
+      "strArea": "Tunisian",
+      "strCountryThumb": "https://www.themealdb.com/images/icons/flags/big/64/tn.png",
+      "strUrl":"tn"
+    },
+    {
+      "strArea": "Turkish",
+      "strCountryThumb": "https://www.themealdb.com/images/icons/flags/big/128/tr.png",
+      "strUrl":"tr"
+    },
+    {
+      "strArea": "Ukrainian",
+      "strCountryThumb": "https://www.themealdb.com/images/icons/flags/big/128/UA.png",
+      "strUrl":"UA"
+    },
+    {
+      "strArea": "Vietnamese",
+      "strCountryThumb": "https://www.themealdb.com/images/icons/flags/big/128/vn.png",
+      "strUrl":"vn"
+    }
+  ]
+}
