@@ -4,6 +4,7 @@ import Link from "next/link";
 import Header from "@/app/components/Header";
 import Footer from "@/app/components/Footer";
 import ScrollToTop from "@/app/components/ScrollToTop";
+import Image from "next/image";
 
 const Page = () => {
   const [categories, setCategories] = useState<
@@ -50,10 +51,13 @@ const Page = () => {
           >
             <Link href={`/category/${encodeURIComponent(x.strCategory)}`}>
               <div className="flex flex-col items-center">
-                <img
+                <Image
                   className="rounded-2xl object-fill "
                   src={x.strCategoryThumb}
                   alt={x.strCategory}
+                  width={500} 
+                  height={300} 
+                  layout="responsive"
                 />
                 <h5 className="font-pacifico text-center p-2 text-2xl font-bold text-slate-700">
                   {x.strCategory}

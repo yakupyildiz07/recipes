@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -56,7 +57,7 @@ const Register = () => {
         setFormData({ name: "", email: "", password: "", confirmPassword: "" });
       }
     } catch (err) {
-      setError("Failed to register. Please reload page and try again.");
+      setError(`Failed to register: ${err instanceof Error ? err.message : 'Unknown error'}`);
     }
   };
 
@@ -144,7 +145,7 @@ const Register = () => {
           className="px-10 bg-white bg-opacity-75 rounded-lg shadow-2xl w-1/2 text-slate-700 text-3xl flex items-center justify-evenly max-sm:w-full max-sm:text-2xl max-sm:p-2 "
         >
           
-          <img src="/home.svg" alt="home" width={40} height={40} />
+          <Image src="/home.svg" alt="home" width={40} height={40} />
           <p>Go home</p>
         </Link>
         <Link
@@ -152,7 +153,7 @@ const Register = () => {
           className="px-10 py-4 bg-white bg-opacity-75 rounded-lg shadow-2xl w-1/2 text-slate-700 text-3xl flex items-center justify-evenly max-sm:w-full max-sm:text-2xl max-sm:p-2"
         >
           
-          <img src="/register.svg" alt="home" width={40} height={40} />
+          <Image src="/register.svg" alt="home" width={40} height={40} />
           <p>Go log in</p>
         </Link>
       </div>

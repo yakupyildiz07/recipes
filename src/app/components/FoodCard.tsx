@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 
 const FoodCard = () => {
@@ -23,9 +24,9 @@ const FoodCard = () => {
   return (
     <div >
       {tarifler.map((tarif) => (
-        <div className="max-w-72 bg-transparent  backdrop-blur-md border-gray-200 rounded-2xl shadow-2xl shadow-red-400  p-3">
+        <div key={tarif.strMealThumb} className="max-w-72 bg-transparent  backdrop-blur-md border-gray-200 rounded-2xl shadow-2xl shadow-red-400  p-3">
           <a href="#">
-            <img
+            <Image
               className="size-max rounded-2xl"
               src={tarif.strMealThumb}
               alt={tarif.strMeal}

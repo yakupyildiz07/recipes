@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { useEffect, useState, useRef } from "react";
 
 const Categories = () => {
@@ -40,9 +41,9 @@ const Categories = () => {
         {'<'}
       </button>
       {kategori.map((x) => (
-        <div className="max-w-min bg-transparent rounded-2xl shadow-red-400 shadow-lg   " >
+        <div key={x.strMealThumb} className="max-w-min bg-transparent rounded-2xl shadow-red-400 shadow-lg   " >
           <a href="#">
-            <img
+            <Image
               className=" rounded-2xl object-fill min-w-36 max-h-24"
               src={x.strCategoryThumb}
               alt={x.strCategory}

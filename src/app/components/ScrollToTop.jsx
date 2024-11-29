@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { useState, useEffect } from 'react';
 
 const ScrollToTop = () => {
@@ -35,7 +36,7 @@ const ScrollToTop = () => {
           onClick={scrollToTop}
           className="fixed bottom-4 right-4 bg-slate-400 hover:bg-slate-700 p-3 rounded-full shadow-2xl transition-all duration-300 z-10"
         >
-            <img src="/up.svg" alt="up" height={25} width={25}/>
+            <Image src="/up.svg" alt="up" height={25} width={25}/>
         </button>
       )}
     </>

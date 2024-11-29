@@ -4,6 +4,7 @@ import Link from "next/link";
 import Header from "@/app/components/Header";
 import Footer from "@/app/components/Footer";
 import ScrollToTop from "@/app/components/ScrollToTop"
+import Image from "next/image";
 
 const CountryListPage = () => {
   const [countries, setCountries] = useState<
@@ -37,10 +38,13 @@ const CountryListPage = () => {
           >
             <Link href={`/country/${encodeURIComponent(x.strArea)}`}>
               <div className="flex flex-col justify-center">
-                <img
+                <Image
                   className="rounded-2xl object-fill"
                   src={x.strCountryThumb}
                   alt={x.strArea}
+                  width={500} 
+                  height={300} 
+                  layout="responsive"
                 />
                 <h5 className="text-center p-2 text-2xl font-bold text-slate-700">
                   {x.strArea}

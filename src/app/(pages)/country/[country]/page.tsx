@@ -4,6 +4,7 @@ import { useParams } from "next/navigation";
 import Footer from "@/app/components/Footer";
 import Header from "@/app/components/Header";
 import ScrollToTop from "@/app/components/ScrollToTop";
+import Image from "next/image";
 
 const CountryPage = () => {
   const params = useParams();
@@ -36,12 +37,15 @@ const CountryPage = () => {
       {/* <p>{description}</p> */}
       <div className="grid grid-cols-4 gap-x-4 gap-y-16 p-10 pt-0 max-sm:flex flex-col max-sm:p-8 max-md:grid-cols-2">
         {meals.map((meal) => (
-          <div className="bg-white bg-opacity-75 rounded-2xl shadow-2xl shadow-red-400  p-3 flex flex-col justify-between">
+          <div key={meal.idMeal} className="bg-white bg-opacity-75 rounded-2xl shadow-2xl shadow-red-400  p-3 flex flex-col justify-between">
             <a href={`/recipe/${meal.idMeal}`}>
-              <img
+              <Image
                 className="size-max rounded-2xl"
                 src={meal.strMealThumb}
                 alt={meal.strMeal}
+                width={500} 
+                height={300} 
+                layout="responsive"
               />
             </a>
             <div className="py-5 flex flex-col justify-evenly">

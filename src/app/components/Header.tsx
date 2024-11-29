@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import ScrollToTop from "./ScrollToTop";
+
 
 const Header: React.FC = () => {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
@@ -71,7 +71,7 @@ const Header: React.FC = () => {
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           className="hidden max-sm:block max-sm:order-1 max-sm:flex-1"
         >
-          <img src="/burger.svg" alt="menu" width={40} height={40} />
+          <Image src="/burger.svg" alt="menu" width={40} height={40} />
         </button>
       </div>
       {/* dropdown menu */}
@@ -131,9 +131,9 @@ const Header: React.FC = () => {
             {query && meals && (
       <div className="grid grid-cols-4 gap-x-4 gap-y-16 p-10 pt-0 max-sm:flex flex-col max-sm:p-8 max-md:grid-cols-2">
                 {meals.map((meal) => (
-                  <div className="bg-transparent  backdrop-blur-md border-gray-200 rounded-2xl shadow-2xl shadow-red-400  p-3 flex flex-col justify-between">
+                  <div key={meal.idMeal} className="bg-transparent  backdrop-blur-md border-gray-200 rounded-2xl shadow-2xl shadow-red-400  p-3 flex flex-col justify-between">
                     <a href={`/recipe/${meal.idMeal}`}>
-                      <img
+                      <Image
                         className="size-max rounded-2xl"
                         src={meal.strMealThumb}
                         alt={meal.strMeal}

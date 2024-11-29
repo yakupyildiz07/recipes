@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
+import Image from "next/image";
 
 const RecipeDetail = () => {
   const params = useParams();
@@ -20,12 +21,17 @@ const RecipeDetail = () => {
     fetchMeal();
   }, [mealId]);
 
+  if (!meal) return <div>Loading...</div>;
+
   return (
     <div className="flex p-10 w-screen bg-white bg-opacity-75 shadow-2xl gap-4 max-sm:flex-col max-md:flex-col max-lg:flex-col">
       <div className="flex flex-1 flex-col items-center">
-        <img
+        <Image
           src={meal.strMealThumb}
           alt={meal.strMeal}
+          width={500} 
+          height={300} 
+          layout="responsive"
           className="w-full max-w-lg rounded-lg shadow-2xl mb-6"
         />
         <h1 className="font-pacifico text-5xl font-bold mb-6 text-black text-center">
