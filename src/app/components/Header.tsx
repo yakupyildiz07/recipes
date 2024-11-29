@@ -137,6 +137,9 @@ const Header: React.FC = () => {
                         className="size-max rounded-2xl"
                         src={meal.strMealThumb}
                         alt={meal.strMeal}
+                        width={300}
+                        height={500}
+                        layout="responsive"
                       />
                     </a>
                     <div className="py-5 flex flex-col justify-evenly">

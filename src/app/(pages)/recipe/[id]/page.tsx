@@ -16,11 +16,6 @@ const RecipeDetailPage = () => {
   );
 };
 
-export async function generateStaticParams() {
-  const response = await fetch('https://www.themealdb.com/api/json/v1/1/random.php');
-  const data = await response.json();
 
-  return data.meals.map((meal: { idMeal: string }) => ({ id: meal.idMeal }));
-}
 
 export default RecipeDetailPage;

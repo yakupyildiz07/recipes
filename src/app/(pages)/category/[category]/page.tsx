@@ -87,3 +87,14 @@ const CategoryPage = ({searchParams,}:{searchParams: { description: string }}) =
 };
 
 export default CategoryPage;
+
+// export async function generateStaticParams() {
+//   // Kategorileri API'den al
+//   const response = await fetch('https://www.themealdb.com/api/json/v1/1/list.php?c=list');
+//   const data = await response.json();
+
+//   // Kategorileri döndür
+//   return data.meals.map((meal: { strCategory: string }) => ({
+//     category: meal.strCategory.toLowerCase(),
+//   }));
+// }

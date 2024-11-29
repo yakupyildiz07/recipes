@@ -2,10 +2,10 @@
 const nextConfig = {
   images: {
     domains: ['www.themealdb.com'],
+    unoptimized: true,
   },
-  output: 'export', 
-  basePath: '/recipes', 
-  assetPrefix: '/recipes'
+  
+
 };
 
 export default nextConfig;
