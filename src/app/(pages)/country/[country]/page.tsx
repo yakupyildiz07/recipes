@@ -34,7 +34,6 @@ const CountryPage = () => {
       <h1 className="font-bold  text-slate-700 text-5xl w-full text-center py-10">
         {country} Recipes
       </h1>
-      {/* <p>{description}</p> */}
       <div className="grid grid-cols-4 gap-x-4 gap-y-16 p-10 pt-0 max-sm:flex flex-col max-sm:p-8 max-md:grid-cols-2">
         {meals.map((meal) => (
           <div key={meal.idMeal} className="bg-white bg-opacity-75 rounded-2xl shadow-2xl shadow-red-400  p-3 flex flex-col justify-between">
