@@ -2,14 +2,16 @@
 
 This project developed using NextJS and TypeScript. The UI/UX design is created using Tailwind CSS. I designed the login and registration page, but since I do not have an endpoint, it has no connection.
 
-**To View the Live Project:** [Click Here](https://recipes-phi-dun.vercel.app)
-
 ## 🚀 Technologies Used
 
 - React
 - NextJS
 - TypeScript
 - Tailwind CSS
+
+## 🚀 Live Demo
+
+👉 [View the project live](https://recipes-phi-dun.vercel.app)
 
 ## 🏃 How to Run
 
